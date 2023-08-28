@@ -19,6 +19,7 @@ import Mic from "./assets/Mic.svg";
 import Bluetooth from "./assets/Bluetooth.svg";
 import user from "./assets/user.svg";
 import Arrow from "./assets/arrow.svg";
+import image from "./assets/GoldOutline.png";
 
 function App() {
   const date = new Date();
@@ -46,6 +47,7 @@ function App() {
     <div className="App">
       <div className="grid-container">
         <div className="row">
+          <img style={{ width: 884 }} src={image} alt="" />
           <div className="first">
             <Icons />
             {/* <div className="gauge">
@@ -71,16 +73,16 @@ function App() {
             <p style={{ padding: 7 }}>12:30 PM</p> */}
             </div>
             <div className="user">
-              <img src={user} alt="" />
-              <p>Hi Nothile</p>
+              <img style={{ margin: 3 }} src={user} alt="" />
+              <p style={{ margin: 3 }}>Hi Nothile</p>
             </div>
             <div className="image-nav">
               <img src={path} alt="" />
-              <div className="arrow">
-                <img src={Arrow} alt="arrow" />
-              </div>
             </div>
 
+            <div className="arrow">
+              <img src={Arrow} alt="ar" />
+            </div>
             <div className="days-left">
               <p>
                 24 <span>Days Left</span>

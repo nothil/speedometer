@@ -1,3 +1,7 @@
+html {
+  min-height: 100%;
+}
+
 .App {
   text-align: center;
   background-image: url("./assets/background.png");
@@ -6,25 +10,29 @@
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
   background-position: 50% 50%;
+  min-height: 100%;
 }
 
 .grid-container {
   height: 50%;
   margin: auto;
-  width: 50%;
+  /* width: 50%; */
   display: inline-grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-rows: 1fr;
   grid-gap: 10px;
 }
 .row {
   display: flex;
   align-items: center;
-  background-color: #321063;
+  /* background-color: #321063; */
   padding: 30px;
-
-  border: 5px solid #b38728;
+  /* background-image: url("./assets/GoldOutline.png"); */
+  /* border: 5px solid #b38728; */
+}
+.row img {
+  width: 60%;
 }
 .row:before {
   content: " ";
@@ -34,23 +42,30 @@
   left: 5px;
   right: 5px;
   bottom: 5px;
-  border: 5px solid #ffea00;
+  /* border-image: url("./assets/GoldOutline.png"); */
 }
 
 .first {
-  background-color: #321063;
-  border-radius: 57%;
+  /* background-color: #321063; */
+  border-radius: 23%;
   width: 334.341px;
   height: 347.52px;
+  position: absolute;
+
+  left: 23%;
+  margin-bottom: -72px;
 }
 .speed-left {
   text-align: center;
   position: relative;
   color: white;
-  top: -247px;
+  top: -206px;
+  font-size: 16px;
+  shadow: 0 0 3px #000;
   h2 {
     color: white !important;
     margin-top: -9px;
+    text-shadow: 0 0 3px #000;
   }
 }
 
@@ -131,10 +146,10 @@
 }
 
 .ind-right {
-  top: 186px;
+  top: 106px;
   position: absolute;
-  /* left: 70em; */
-  right: 8em;
+  left: 18em;
+  /* right: 8em; */
   /* transform: matrix(-1, 0, 0, -1, 0, 0); */
 }
 .icons-list img {
@@ -146,69 +161,14 @@
   opacity: 0.3;
   border-radius: 25px;
   width: auto;
-  height: 11%;
+  height: 9%;
   display: flex;
 }
 
 .user img {
-  width: 50px;
-}
-.gauge {
-  position: relative;
-  border-radius: 50%/100% 100% 0 0;
-  background-color: var(--color, #a22);
-  overflow: hidden;
-}
-.gauge:before {
-  content: "";
-  display: block;
-  padding-top: 50%; /* ratio of 2:1*/
-}
-.gauge .chart {
-  overflow: hidden;
-}
-.gauge .mask {
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  bottom: 0;
-  top: 8%;
-  background-color: #fff;
-  border-radius: 50%/100% 100% 0 0;
+  width: 66px;
 }
 
-.gauge .percentage {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  bottom: 0;
-  right: -1px;
-  background-color: var(--background, #f3ed93);
-  transform: rotate(var(--rotation));
-  transform-origin: bottom center;
-  transition-duration: 600;
-}
-.gauge:hover {
-  --rotation: 100deg;
-}
-.gauge .value {
-  position: absolute;
-  bottom: 0%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.gauge .min {
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-}
-.gauge .max {
-  position: absolute;
-  bottom: 0;
-  right: 5%;
-}
 .image-nav {
   width: 306px;
   height: 151px;
@@ -228,7 +188,7 @@
 }
 
 .arrow {
-  margin-top: -88px;
+  margin-top: -99px;
 }
 
 .date-time {
@@ -252,28 +212,37 @@
 }
 
 .ind-left {
-  top: 186px;
+  top: 106px;
   position: absolute;
-  left: 24em;
+  left: -1em;
   /* transform: matrix(-1, 0, 0, -1, 0, 0); */
 }
 .second {
-  background-color: #321063;
-  width: 282.341px;
+  /* background-color: #321063; */
+  /* width: 282.341px; */
   height: 347.52px;
+
+  position: absolute;
+  left: 41%;
+  top: 10%;
 }
 .icons-list {
-  margin: 28px;
+  margin: 6px;
   padding: 1px;
+  display: flex;
+  width: 20%;
   img {
     padding: 5px;
   }
 }
 .last {
-  background-color: #321063;
-  border-radius: 57%;
+  /* background-color: #321063; */
+  border-radius: 54%;
   width: 334.341px;
   height: 347.52px;
+  position: absolute;
+  left: 54%;
+  margin-bottom: -72px;
 }
 // creare css with clock direction numbers
 

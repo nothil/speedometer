@@ -5,8 +5,8 @@ const Right = () => {
       data-name="Group 44"
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
-      width="290.341"
-      height="351.52"
+      width="249.341"
+      height="300.52"
       viewBox="0 0 374.341 374.52"
     >
       <defs>
