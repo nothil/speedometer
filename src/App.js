@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+// import { useState } from "react";
 
 // import a component from another file
 // import { User } from "./user.js";
@@ -20,6 +20,7 @@ import Bluetooth from "./assets/Bluetooth.svg";
 import user from "./assets/user.svg";
 import Arrow from "./assets/arrow.svg";
 import image from "./assets/GoldOutline.png";
+import Loader from "./assets/loder.jsx";
 
 function App() {
   const date = new Date();
@@ -43,13 +44,33 @@ function App() {
 
   const daysLeft = daysInMonth(month, year) - day;
   console.log(daysLeft);
+
+  // Create an array of speedometer speed readings
+  const speedReadings = Array.from({ length: 10 }, (_, i) => (i + 1) * 10);
+
   return (
     <div className="App">
       <div className="grid-container">
         <div className="row">
+          <div className="speedometer">
+            <div className="speedometer">
+              <div className="speed-readings">
+                {speedReadings.map((reading, index) => (
+                  <div key={reading} className="speed-reading">
+                    {reading}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <img style={{ width: 884 }} src={image} alt="" />
           <div className="first">
             <Icons />
+
+            <div className="loader-spin">
+              <Loader />
+            </div>
             {/* <div className="gauge">
               <div className="percentage"></div>
               <div className="mask"></div>

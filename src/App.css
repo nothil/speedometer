@@ -9,7 +9,7 @@ html {
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%; */
   min-height: 100%;
 }
 
@@ -69,6 +69,7 @@ html {
   }
 }
 
+/** Speedometer Styles **/
 /** Speedometer Styles **/
 .speedometer-container {
   width: 48rem;
@@ -145,6 +146,49 @@ html {
   transform: rotate(-15deg);
 }
 
+/* Speedometer Speed Readings */
+.speedometer .speed-readings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speedometer .speed-readings::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 1px solid white;
+  height: 100%;
+}
+
+.speed-reading {
+  position: absolute;
+  transform-origin: top center;
+  transform: rotate(var(--angle)) translateX(-50%) translateY(-100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.loader-spin {
+  position: absolute;
+  left: 15%;
+  width: 186.341px;
+  height: 251.52px;
+  top: -3%;
+}
+
+@for $i from 0 to 10 {
+  .speed-reading:nth-child(#{$i + 1}) {
+    --angle: #{18deg * $i};
+  }
+}
 .ind-right {
   top: 106px;
   position: absolute;
