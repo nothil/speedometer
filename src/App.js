@@ -42,6 +42,36 @@ function App() {
     return new Date(year, months, 0).getDate();
   };
 
+  // const ascendingCountAnimation = () => {
+  //   let count = 0;
+  //   const counter = setInterval(() => {
+  //     count++;
+  //     console.log(count);
+  //     if (count === 100) {
+  //       clearInterval(counter);
+  //     }
+  //   }, 30);
+  // };
+
+  // svg loader animation
+  // const loaderAnimation = () => {
+  //   let count = 0;
+  //   const counter = setInterval(() => {
+  //     count++;
+  //     console.log(count);
+  //     if (count === 100) {
+  //       clearInterval(counter);
+  //     }
+  //   }, 30);
+
+  //   const loader = document.querySelector(".loader");
+  //   loader.style.display = "none";
+  // };
+
+  // loaderAnimation();
+
+  // ascendingCountAnimation();
+
   const daysLeft = daysInMonth(month, year) - day;
   console.log(daysLeft);
 
@@ -63,7 +93,31 @@ function App() {
             </div>
             <div className="percent">
               <p>24%</p>
+              {/* <p>0</p>
+              <p>25m</p>
+
+              <p>50m</p>
+
+              <p>400m</p>
+
+              <p>600m</p>
+
+              <p>100m</p> */}
             </div>
+
+            <div className="progress-bar">
+              <div className="progress"></div>
+
+              <div className="progress-bar-text">
+                <p>0</p>
+                <p>100</p>
+
+                <p>50</p>
+
+                <p>75</p>
+              </div>
+            </div>
+
             <div className="ind-left">
               <img src={LeftIndicator} alt="" />
             </div>

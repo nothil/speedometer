@@ -30,6 +30,9 @@ html {
   padding: 30px;
   /* background-image: url("./assets/GoldOutline.png"); */
   /* border: 5px solid #b38728; */
+  background-color: #321063;
+
+  /* border-radius: 40px 999em 999em 40px; */
 }
 .row img {
   width: 60%;
@@ -69,6 +72,15 @@ html {
   }
 }
 
+.progress-bar {
+  position: absolute;
+}
+.progress-bar-text p {
+  position: absolute;
+  left: 312%;
+  top: -77%;
+  color: cornsilk;
+}
 .percent {
   position: absolute;
   top: 65%;
