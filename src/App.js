@@ -93,16 +93,6 @@ function App() {
             </div>
             <div className="percent">
               <p>24%</p>
-              {/* <p>0</p>
-              <p>25m</p>
-
-              <p>50m</p>
-
-              <p>400m</p>
-
-              <p>600m</p>
-
-              <p>100m</p> */}
             </div>
 
             <div className="progress-bar">

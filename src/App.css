@@ -220,12 +220,12 @@ loader-spin img {
 }
 // creare css with clock direction numbers
 
-. . @for $i from 0 to 20 {
+/* . . @for $i from 0 to 20 {
   .tick:nth-child(#{$i + 1}) {
     --angle: #{360deg / 27 * $i};
     --position-number: #{130deg + (-13.5deg * $i)};
   }
-}
+} */
 
 .App-logo {
   height: 40vmin;
