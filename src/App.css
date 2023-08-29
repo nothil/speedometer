@@ -9,31 +9,27 @@ html {
   background-size: cover;
   background-position: center;
   image-rendering: -webkit-optimize-contrast;
-  /* background-position: 50% 50%; */
   min-height: 100%;
 }
 
 .grid-container {
   height: 50%;
   margin: auto;
-  /* width: 50%; */
+
   display: inline-grid;
   align-items: center;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+
   grid-template-rows: 1fr;
   grid-gap: 10px;
 }
+
 .row {
   display: flex;
   align-items: center;
-  /* background-color: #321063; */
   padding: 30px;
-  /* background-image: url("./assets/GoldOutline.png"); */
-  /* border: 5px solid #b38728; */
   background-color: #321063;
-
-  /* border-radius: 40px 999em 999em 40px; */
 }
+
 .row img {
   width: 60%;
 }
@@ -45,11 +41,9 @@ html {
   left: 5px;
   right: 5px;
   bottom: 5px;
-  /* border-image: url("./assets/GoldOutline.png"); */
 }
 
 .first {
-  /* background-color: #321063; */
   border-radius: 23%;
   width: 334.341px;
   height: 347.52px;
@@ -119,12 +113,11 @@ loader-spin img {
   top: 106px;
   position: absolute;
   left: 18em;
-  /* right: 8em; */
-  /* transform: matrix(-1, 0, 0, -1, 0, 0); */
 }
 .icons-list img {
   margin-left: 8px;
 }
+
 .user {
   background-color: #ffffff;
   border: 1px solid black;
@@ -153,7 +146,6 @@ loader-spin img {
   margin-top: 18px;
 }
 .arrow img {
-  /* margin-top: -96x; */
   width: 26px;
 }
 
@@ -189,13 +181,9 @@ loader-spin img {
   top: 106px;
   position: absolute;
   left: -1em;
-  /* transform: matrix(-1, 0, 0, -1, 0, 0); */
 }
 .second {
-  /* background-color: #321063; */
-  /* width: 282.341px; */
   height: 347.52px;
-
   position: absolute;
   left: 41%;
   top: 10%;
@@ -210,7 +198,6 @@ loader-spin img {
   }
 }
 .last {
-  /* background-color: #321063; */
   border-radius: 54%;
   width: 334.341px;
   height: 347.52px;
@@ -218,14 +205,13 @@ loader-spin img {
   left: 54%;
   margin-bottom: -72px;
 }
-// creare css with clock direction numbers
 
-/* . . @for $i from 0 to 20 {
+. . @for $i from 0 to 20 {
   .tick:nth-child(#{$i + 1}) {
     --angle: #{360deg / 27 * $i};
     --position-number: #{130deg + (-13.5deg * $i)};
   }
-} */
+}
 
 .App-logo {
   height: 40vmin;
