@@ -45,25 +45,10 @@ function App() {
   const daysLeft = daysInMonth(month, year) - day;
   console.log(daysLeft);
 
-  // Create an array of speedometer speed readings
-  const speedReadings = Array.from({ length: 10 }, (_, i) => (i + 1) * 10);
-
   return (
     <div className="App">
       <div className="grid-container">
         <div className="row">
-          <div className="speedometer">
-            <div className="speedometer">
-              <div className="speed-readings">
-                {speedReadings.map((reading, index) => (
-                  <div key={reading} className="speed-reading">
-                    {reading}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
           <img style={{ width: 884 }} src={image} alt="" />
           <div className="first">
             <Icons />
@@ -71,15 +56,13 @@ function App() {
             <div className="loader-spin">
               <Loader />
             </div>
-            {/* <div className="gauge">
-              <div className="percentage"></div>
-              <div className="mask"></div>
-              <div className="value"></div>
-            </div> */}
 
             <div className="speed-left">
               <h2>250</h2>
               <p>Marquis</p>
+            </div>
+            <div className="percent">
+              <p>24%</p>
             </div>
             <div className="ind-left">
               <img src={LeftIndicator} alt="" />
@@ -89,9 +72,6 @@ function App() {
             <div className="date-time">
               <p style={{ padding: 7 }}>28c</p>
               <p style={{ padding: 7 }}>{fullDate}</p>
-              {/* <p style={{ padding: 7 }}>August</p>
-              <p style={{ padding: 7 }}>2023</p>
-            <p style={{ padding: 7 }}>12:30 PM</p> */}
             </div>
             <div className="user">
               <img style={{ margin: 3 }} src={user} alt="" />
@@ -105,9 +85,7 @@ function App() {
               <img src={Arrow} alt="ar" />
             </div>
             <div className="days-left">
-              <p>
-                24 <span>Days Left</span>
-              </p>
+              <p>24 Days Left</p>
             </div>
             <div className="icons-list">
               <img src={Wifi} alt="" />
