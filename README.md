@@ -16,3 +16,5 @@
 ### Check the complete website on localhost:3000
 
 ### I have deployed this website on Vercel for non developers to check it out.
+
+[link to website](https://speedometer-psi.vercel.app/)
