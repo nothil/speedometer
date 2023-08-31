@@ -1,9 +1,11 @@
-## Responsive website using
+## Speedometer Website using ReactJs and OpenWeatherMap API
 
 - Css
-- Html
+- Bootstrap
 - JavaScript
 - ReactJs
+- for weather (dynamic) data I have used OpenWeatherMap API
+- and some FrameWorks for icons and fonts.
 
 ## Run these commands to run the website
 

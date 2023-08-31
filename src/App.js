@@ -22,6 +22,8 @@ import Arrow from "./assets/arrow.svg";
 import image from "./assets/GoldOutline.png";
 import Loader from "./assets/loder.jsx";
 
+import WeatherDisplay from "./components/weather";
+
 function App() {
   const date = new Date();
   const day = date.getDate();
@@ -41,36 +43,6 @@ function App() {
   const daysInMonth = (months, year) => {
     return new Date(year, months, 0).getDate();
   };
-
-  // const ascendingCountAnimation = () => {
-  //   let count = 0;
-  //   const counter = setInterval(() => {
-  //     count++;
-  //     console.log(count);
-  //     if (count === 100) {
-  //       clearInterval(counter);
-  //     }
-  //   }, 30);
-  // };
-
-  // svg loader animation
-  // const loaderAnimation = () => {
-  //   let count = 0;
-  //   const counter = setInterval(() => {
-  //     count++;
-  //     console.log(count);
-  //     if (count === 100) {
-  //       clearInterval(counter);
-  //     }
-  //   }, 30);
-
-  //   const loader = document.querySelector(".loader");
-  //   loader.style.display = "none";
-  // };
-
-  // loaderAnimation();
-
-  // ascendingCountAnimation();
 
   const daysLeft = daysInMonth(month, year) - day;
   console.log(daysLeft);
@@ -95,17 +67,17 @@ function App() {
               <p>24%</p>
               {/* <p>0</p>
               <p>25m</p>
-
+              
               <p>50m</p>
 
               <p>400m</p>
-
+              
               <p>600m</p>
 
               <p>100m</p> */}
             </div>
 
-            <div className="progress-bar">
+            {/* <div className="progress-bar">
               <div className="progress"></div>
 
               <div className="progress-bar-text">
@@ -116,7 +88,7 @@ function App() {
 
                 <p>75</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="ind-left">
               <img src={LeftIndicator} alt="" />
@@ -124,8 +96,9 @@ function App() {
           </div>
           <div className="second">
             <div className="date-time">
-              <p style={{ padding: 7 }}>28c</p>
-              <p style={{ padding: 7 }}>{fullDate}</p>
+              <WeatherDisplay />
+
+              <p>{fullDate}</p>
             </div>
             <div className="user">
               <img style={{ margin: 3 }} src={user} alt="" />

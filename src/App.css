@@ -1,5 +1,6 @@
-html {
-  min-height: 100%;
+html body {
+  margin: 0;
+  height: 100%;
 }
 
 .App {
@@ -29,7 +30,9 @@ html {
   padding: 30px;
   background-color: #321063;
 }
-
+.row > * {
+  with: 24% !important;
+}
 .row img {
   width: 60%;
 }
@@ -123,7 +126,7 @@ loader-spin img {
   border: 1px solid black;
   opacity: 0.3;
   border-radius: 25px;
-  width: auto;
+  width: 80%;
   height: 9%;
   display: flex;
 }
@@ -163,6 +166,10 @@ loader-spin img {
     margin: 2px;
     padding: 12px;
   }
+}
+.date-time p {
+  padding: 13px;
+  font-size: 14px;
 }
 
 .date-time img {
