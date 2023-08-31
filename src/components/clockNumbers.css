@@ -1,0 +1,71 @@
+.clock {
+  width: 206px;
+  height: 223px;
+  top: -78%;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.number {
+  position: absolute;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.number-0 {
+  top: 155px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.number-25 {
+  top: 95px;
+  left: 4%;
+  transform: translateX(-50%);
+}
+
+.number-50 {
+  top: 49px;
+  left: 14%;
+  transform: translateX(-50%);
+}
+
+.number-100 {
+  top: 22px;
+  left: 29%;
+  transform: translateX(-50%);
+}
+
+.number-200 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-300 {
+  top: 22px;
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.number-400 {
+  top: 48px;
+  right: 24px;
+}
+
+.number-500 {
+  top: 105px;
+  left: 94%;
+  transform: translateX(-50%);
+}
+
+.number-600 {
+  top: 156px;
+  left: 88%;
+  transform: translateX(-50%);
+}

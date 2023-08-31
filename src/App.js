@@ -23,6 +23,8 @@ import image from "./assets/GoldOutline.png";
 import Loader from "./assets/loder.jsx";
 
 import WeatherDisplay from "./components/weather";
+import ClockNumbers from "./components/clock";
+import Percent from "./components/percent";
 
 function App() {
   const date = new Date();
@@ -58,11 +60,12 @@ function App() {
             <div className="loader-spin">
               <Loader />
             </div>
+            <ClockNumbers />
 
-            <div className="speed-left">
+            {/* <div className="speed-left">
               <h2>250</h2>
               <p>Marquis</p>
-            </div>
+            </div> */}
             <div className="percent">
               <p>24%</p>
               {/* <p>0</p>
@@ -113,22 +116,23 @@ function App() {
             </div>
             <div className="days-left">
               <p>24 Days Left</p>
-            </div>
-            <div className="icons-list">
-              <img src={Wifi} alt="" />
-              <img src={Bluetooth} alt="" />
-              <img src={Location} alt="" />
-              <img src={Phone} alt="" />
-              <img src={Music} alt="" />
-              <img src={Mic} alt="" />
+              <div className="icons-list">
+                <img src={Wifi} alt="" />
+                <img src={Bluetooth} alt="" />
+                <img src={Location} alt="" />
+                <img src={Phone} alt="" />
+                <img src={Music} alt="" />
+                <img src={Mic} alt="" />
+              </div>
             </div>
           </div>
           <div className="last">
-            <Right />
-            <div className="speed-left">
-              <h2>55%</h2>
-              <p>Estimated</p>
+            <div className="loader-spin">
+              <Loader />
             </div>
+            <Right />
+            <Percent />
+
             <div className="ind-right">
               <img src={RightIndicator} alt="" />
             </div>
