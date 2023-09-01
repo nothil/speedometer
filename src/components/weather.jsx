@@ -33,7 +33,7 @@ const WeatherDisplay = () => {
     return <div>Loading...</div>;
   }
 
-  const selectedWeatherIndex = 0;
+  const selectedWeatherIndex = 1;
   const selectedWeather = weatherData.list[selectedWeatherIndex];
 
   const weatherList = (
@@ -41,7 +41,8 @@ const WeatherDisplay = () => {
       {/* <p>Date and Time: {item.dt_txt}</p> */}
       <img
         src={`http://openweathermap.org/img/wn/${selectedWeather.weather[0].icon}.png`}
-        alt="Weather Icon"
+        alt="Weather-Icon"
+        style={{ width: 37, height: 41, paddingTop: 18 }}
       />
       <p> {selectedWeather.main.temp}°C</p>
       {/* <p>Weather: {item.weather[0].description}</p> */}

@@ -17,65 +17,65 @@
   color: #ffffff;
 }
 
-.number-0 {
+.nums-0 {
   top: 155px;
   left: 10%;
   transform: translateX(-50%);
 }
 
-.number-10 {
+.nums-10 {
   top: 95px;
   left: 4%;
   transform: translateX(-50%);
 }
 
-.number-25 {
+.nums-25 {
   top: 48px;
   left: 29px;
 }
 
-.number-35 {
+.nums-35 {
   left: 30%;
   top: 10%;
   transform: translateX(-50%);
 }
 
-.number-50 {
+.nums-50 {
   top: 49px;
   left: 14%;
   transform: translateX(-50%);
 }
 
-.number-100 {
+.nums-100 {
   top: 22px;
   left: 29%;
   transform: translateX(-50%);
 }
 
-.number-50 {
+.nums-50 {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.number-65 {
+.nums-65 {
   top: 22px;
   left: 70%;
   transform: translateX(-50%);
 }
 
-.number-75 {
+.nums-75 {
   top: 48px;
   right: 24px;
 }
 
-.number-85 {
+.nums-85 {
   top: 105px;
   left: 94%;
   transform: translateX(-50%);
 }
 
-.number-100 {
+.nums-100 {
   top: 156px;
   left: 88%;
   transform: translateX(-50%);

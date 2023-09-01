@@ -7,7 +7,7 @@ const Percent = () => {
   return (
     <div className="clock">
       {numbers.map((number) => (
-        <div key={number} className={`number number-${number}`}>
+        <div key={number} className={`number nums-${number}`}>
           {number}%
         </div>
       ))}
